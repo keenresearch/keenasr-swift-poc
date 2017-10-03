@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE323DB91F8345E900AC863C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE323DB81F8345E900AC863C /* AppDelegate.swift */; };
+		EE323DBB1F8345E900AC863C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE323DBA1F8345E900AC863C /* ViewController.swift */; };
+		EE323DBE1F8345E900AC863C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE323DBC1F8345E900AC863C /* Main.storyboard */; };
+		EE323DC01F8345E900AC863C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE323DBF1F8345E900AC863C /* Assets.xcassets */; };
+		EE323DC31F8345E900AC863C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE323DC11F8345E900AC863C /* LaunchScreen.storyboard */; };
+		EE323DCB1F83463000AC863C /* KeenASR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE323DCA1F83463000AC863C /* KeenASR.framework */; };
+		EE323DCD1F83466500AC863C /* librispeech-nnet2-en-us in Resources */ = {isa = PBXBuildFile; fileRef = EE323DCC1F83466500AC863C /* librispeech-nnet2-en-us */; };
+		EE323DD01F83468900AC863C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE323DCF1F83468900AC863C /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE323DB51F8345E900AC863C /* keenasr-swift-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keenasr-swift-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE323DB81F8345E900AC863C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE323DBA1F8345E900AC863C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE323DBD1F8345E900AC863C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE323DBF1F8345E900AC863C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE323DC21F8345E900AC863C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE323DC41F8345E900AC863C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE323DCA1F83463000AC863C /* KeenASR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeenASR.framework; sourceTree = "<group>"; };
+		EE323DCC1F83466500AC863C /* librispeech-nnet2-en-us */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "librispeech-nnet2-en-us"; sourceTree = "<group>"; };
+		EE323DCF1F83468900AC863C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE323DB21F8345E900AC863C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE323DD01F83468900AC863C /* libc++.tbd in Frameworks */,
+				EE323DCB1F83463000AC863C /* KeenASR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE323DAC1F8345E900AC863C = {
+			isa = PBXGroup;
+			children = (
+				EE323DCC1F83466500AC863C /* librispeech-nnet2-en-us */,
+				EE323DCA1F83463000AC863C /* KeenASR.framework */,
+				EE323DB71F8345E900AC863C /* keenasr-swift-poc */,
+				EE323DB61F8345E900AC863C /* Products */,
+				EE323DCE1F83468800AC863C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE323DB61F8345E900AC863C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE323DB51F8345E900AC863C /* keenasr-swift-poc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE323DB71F8345E900AC863C /* keenasr-swift-poc */ = {
+			isa = PBXGroup;
+			children = (
+				EE323DB81F8345E900AC863C /* AppDelegate.swift */,
+				EE323DBA1F8345E900AC863C /* ViewController.swift */,
+				EE323DBC1F8345E900AC863C /* Main.storyboard */,
+				EE323DBF1F8345E900AC863C /* Assets.xcassets */,
+				EE323DC11F8345E900AC863C /* LaunchScreen.storyboard */,
+				EE323DC41F8345E900AC863C /* Info.plist */,
+			);
+			path = "keenasr-swift-poc";
+			sourceTree = "<group>";
+		};
+		EE323DCE1F83468800AC863C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE323DCF1F83468900AC863C /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE323DB41F8345E900AC863C /* keenasr-swift-poc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE323DC71F8345E900AC863C /* Build configuration list for PBXNativeTarget "keenasr-swift-poc" */;
+			buildPhases = (
+				EE323DB11F8345E900AC863C /* Sources */,
+				EE323DB21F8345E900AC863C /* Frameworks */,
+				EE323DB31F8345E900AC863C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "keenasr-swift-poc";
+			productName = "keenasr-swift-poc";
+			productReference = EE323DB51F8345E900AC863C /* keenasr-swift-poc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE323DAD1F8345E900AC863C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Keen Research";
+				TargetAttributes = {
+					EE323DB41F8345E900AC863C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2M983EKR69;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE323DB01F8345E900AC863C /* Build configuration list for PBXProject "keenasr-swift-poc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE323DAC1F8345E900AC863C;
+			productRefGroup = EE323DB61F8345E900AC863C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE323DB41F8345E900AC863C /* keenasr-swift-poc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE323DB31F8345E900AC863C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE323DC31F8345E900AC863C /* LaunchScreen.storyboard in Resources */,
+				EE323DC01F8345E900AC863C /* Assets.xcassets in Resources */,
+				EE323DCD1F83466500AC863C /* librispeech-nnet2-en-us in Resources */,
+				EE323DBE1F8345E900AC863C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE323DB11F8345E900AC863C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE323DBB1F8345E900AC863C /* ViewController.swift in Sources */,
+				EE323DB91F8345E900AC863C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE323DBC1F8345E900AC863C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE323DBD1F8345E900AC863C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE323DC11F8345E900AC863C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE323DC21F8345E900AC863C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE323DC51F8345E900AC863C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE323DC61F8345E900AC863C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE323DC81F8345E900AC863C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2M983EKR69;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "keenasr-swift-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keenresearch.keenasr-swift-poc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "keenasr-swift-poc//KeenASR-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE323DC91F8345E900AC863C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2M983EKR69;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "keenasr-swift-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keenresearch.keenasr-swift-poc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "keenasr-swift-poc//KeenASR-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE323DB01F8345E900AC863C /* Build configuration list for PBXProject "keenasr-swift-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE323DC51F8345E900AC863C /* Debug */,
+				EE323DC61F8345E900AC863C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE323DC71F8345E900AC863C /* Build configuration list for PBXNativeTarget "keenasr-swift-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE323DC81F8345E900AC863C /* Debug */,
+				EE323DC91F8345E900AC863C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE323DAD1F8345E900AC863C /* Project object */;
+}
