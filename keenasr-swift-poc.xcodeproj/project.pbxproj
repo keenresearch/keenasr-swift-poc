@@ -14,7 +14,7 @@
 		EE323DC31F8345E900AC863C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE323DC11F8345E900AC863C /* LaunchScreen.storyboard */; };
 		EE323DCB1F83463000AC863C /* KeenASR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE323DCA1F83463000AC863C /* KeenASR.framework */; };
 		EE323DD01F83468900AC863C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE323DCF1F83468900AC863C /* libc++.tbd */; };
-		EEE66EF11F9A8F0B00B58ECB /* librispeechQT-nnet2-en-us in Resources */ = {isa = PBXBuildFile; fileRef = EEE66EF01F9A8F0B00B58ECB /* librispeechQT-nnet2-en-us */; };
+		EEA81AA520D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us in Resources */ = {isa = PBXBuildFile; fileRef = EEA81AA420D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		EE323DC41F8345E900AC863C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE323DCA1F83463000AC863C /* KeenASR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeenASR.framework; sourceTree = "<group>"; };
 		EE323DCF1F83468900AC863C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		EEE66EF01F9A8F0B00B58ECB /* librispeechQT-nnet2-en-us */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "librispeechQT-nnet2-en-us"; sourceTree = "<group>"; };
+		EEA81AA420D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "keenB2mQT-nnet3chain-en-us"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,7 @@
 		EE323DAC1F8345E900AC863C = {
 			isa = PBXGroup;
 			children = (
-				EEE66EF01F9A8F0B00B58ECB /* librispeechQT-nnet2-en-us */,
-				EE323DCA1F83463000AC863C /* KeenASR.framework */,
+				EEA81AA420D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us */,
 				EE323DB71F8345E900AC863C /* keenasr-swift-poc */,
 				EE323DB61F8345E900AC863C /* Products */,
 				EE323DCE1F83468800AC863C /* Frameworks */,
@@ -78,6 +77,7 @@
 		EE323DCE1F83468800AC863C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE323DCA1F83463000AC863C /* KeenASR.framework */,
 				EE323DCF1F83468900AC863C /* libc++.tbd */,
 			);
 			name = Frameworks;
@@ -143,8 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA81AA520D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us in Resources */,
 				EE323DC31F8345E900AC863C /* LaunchScreen.storyboard in Resources */,
-				EEE66EF11F9A8F0B00B58ECB /* librispeechQT-nnet2-en-us in Resources */,
 				EE323DC01F8345E900AC863C /* Assets.xcassets in Resources */,
 				EE323DBE1F8345E900AC863C /* Main.storyboard in Resources */,
 			);

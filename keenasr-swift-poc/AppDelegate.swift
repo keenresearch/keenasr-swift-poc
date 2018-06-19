@@ -20,11 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     KIOSRecognizer.setLogLevel(.debug)
 
     // here we initialize the SDK with ASR Bundle
-    KIOSRecognizer.initWithASRBundle("librispeechQT-nnet2-en-us")
+    KIOSRecognizer.initWithASRBundle("keenB2mQT-nnet3chain-en-us")
     
     // arbitrary list of words we will be listening for; this can be changed to any list
     // of commands/phrases, etc.
-    let sentences = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    let sentences = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
     let recognizer = KIOSRecognizer.sharedInstance()
     
     // now, we create a decoding graph using sentences defined above; decoding graph

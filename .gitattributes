@@ -1,0 +1,2 @@
+KeenASR.framework/ filter=lfs diff=lfs merge=lfs -text
+KeenASR.framework/Versions/A/KeenASR filter=lfs diff=lfs merge=lfs -text
