@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD4D47E2F2806F400A7F1EA /* KeenASR.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4D47D2F2806F400A7F1EA /* KeenASR.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD4D5472F28150D00A7F1EA /* keenA1m-nnet3chain-en-us in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4D5462F28150D00A7F1EA /* keenA1m-nnet3chain-en-us */; };
 		EE323DB91F8345E900AC863C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE323DB81F8345E900AC863C /* AppDelegate.swift */; };
 		EE323DBB1F8345E900AC863C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE323DBA1F8345E900AC863C /* ViewController.swift */; };
 		EE323DBE1F8345E900AC863C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE323DBC1F8345E900AC863C /* Main.storyboard */; };
 		EE323DC01F8345E900AC863C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE323DBF1F8345E900AC863C /* Assets.xcassets */; };
 		EE323DC31F8345E900AC863C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE323DC11F8345E900AC863C /* LaunchScreen.storyboard */; };
 		EE323DD01F83468900AC863C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE323DCF1F83468900AC863C /* libc++.tbd */; };
-		EEA81AA520D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us in Resources */ = {isa = PBXBuildFile; fileRef = EEA81AA420D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us */; };
-		EED101822322336000BEA5A8 /* KeenASR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE323DCA1F83463000AC863C /* KeenASR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EED101822322336000BEA5A8 /* KeenASR.framework in Embed Frameworks */,
+				4CD4D47E2F2806F400A7F1EA /* KeenASR.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4CD4D47D2F2806F400A7F1EA /* KeenASR.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KeenASR.xcframework; sourceTree = "<group>"; };
+		4CD4D5462F28150D00A7F1EA /* keenA1m-nnet3chain-en-us */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "keenA1m-nnet3chain-en-us"; sourceTree = "<group>"; };
 		EE323DB51F8345E900AC863C /* keenasr-swift-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keenasr-swift-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE323DB81F8345E900AC863C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE323DBA1F8345E900AC863C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,9 +41,7 @@
 		EE323DBF1F8345E900AC863C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE323DC21F8345E900AC863C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE323DC41F8345E900AC863C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE323DCA1F83463000AC863C /* KeenASR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeenASR.framework; sourceTree = "<group>"; };
 		EE323DCF1F83468900AC863C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		EEA81AA420D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "keenB2mQT-nnet3chain-en-us"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,8 @@
 		EE323DAC1F8345E900AC863C = {
 			isa = PBXGroup;
 			children = (
-				EEA81AA420D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us */,
+				4CD4D5462F28150D00A7F1EA /* keenA1m-nnet3chain-en-us */,
+				4CD4D47D2F2806F400A7F1EA /* KeenASR.xcframework */,
 				EE323DB71F8345E900AC863C /* keenasr-swift-poc */,
 				EE323DB61F8345E900AC863C /* Products */,
 				EE323DCE1F83468800AC863C /* Frameworks */,
@@ -90,7 +91,6 @@
 		EE323DCE1F83468800AC863C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE323DCA1F83463000AC863C /* KeenASR.framework */,
 				EE323DCF1F83468900AC863C /* libc++.tbd */,
 			);
 			name = Frameworks;
@@ -129,7 +129,6 @@
 				TargetAttributes = {
 					EE323DB41F8345E900AC863C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2M983EKR69;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
@@ -158,7 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA81AA520D8BE7900336B45 /* keenB2mQT-nnet3chain-en-us in Resources */,
+				4CD4D5472F28150D00A7F1EA /* keenA1m-nnet3chain-en-us in Resources */,
 				EE323DC31F8345E900AC863C /* LaunchScreen.storyboard in Resources */,
 				EE323DC01F8345E900AC863C /* Assets.xcassets in Resources */,
 				EE323DBE1F8345E900AC863C /* Main.storyboard in Resources */,
@@ -306,7 +305,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -316,18 +316,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2M983EKR69;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "keenasr-swift-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keenresearch.keenasr-swift-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}//KeenASR-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
@@ -338,18 +338,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2M983EKR69;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "keenasr-swift-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keenresearch.keenasr-swift-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}//KeenASR-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;

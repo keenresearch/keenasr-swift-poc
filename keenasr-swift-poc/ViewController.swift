@@ -6,6 +6,7 @@
 //  Copyright © 2017 Keen Research. All rights reserved.
 //
 
+import KeenASR
 import UIKit
 
 class ViewController: UIViewController {
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
     // we set label text to gray for partial results, then set it to black or red
     // in the finalResult callback based on the confidence score
     recognizedText?.textColor = UIColor.gray
-    KIOSRecognizer.sharedInstance()?.startListening()
+    KIOSRecognizer.sharedInstance()?.startListening(nil)
   }
 
 
@@ -65,11 +66,12 @@ extension ViewController:KIOSRecognizerDelegate {
     recognizedText?.text = result.cleanText
   }
   
-  func recognizerFinalResult(_ result: KIOSResult, for recognizer: KIOSRecognizer) {
-    NSLog("Final result: %@", result)
+  func recognizerFinalResponse(_ response: KIOSResponse, for recognizer: KIOSRecognizer) {
+    NSLog("Final response: %@", response)
+    let result = response.result
     startButton?.isEnabled = true
-    recognizedText?.text = result.cleanText
-    let confidence = result.confidence?.doubleValue
+    recognizedText?.text = result?.cleanText
+    let confidence = result?.confidence?.doubleValue
     if (confidence?.isLess(than: 0.75))! {
       // we show "low confidence" result in red
       recognizedText?.textColor = UIColor.red

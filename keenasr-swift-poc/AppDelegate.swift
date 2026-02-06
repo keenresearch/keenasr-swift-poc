@@ -6,6 +6,7 @@
 //  Copyright © 2017 Keen Research. All rights reserved.
 //
 
+import KeenASR
 import UIKit
 
 @UIApplicationMain
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     KIOSRecognizer.setLogLevel(.debug)
 
     // here we initialize the SDK with ASR Bundle
-    KIOSRecognizer.initWithASRBundle("keenB2mQT-nnet3chain-en-us")
+    KIOSRecognizer.initWithASRBundle("keenA1m-nnet3chain-en-us")
     
     // arbitrary list of words we will be listening for; this can be changed to any list
     // of commands/phrases, etc.
